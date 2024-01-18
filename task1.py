@@ -66,6 +66,10 @@ time_medium_timsort_sorted = timeit.timeit(lambda: sorted(data_medium[:]), numbe
 time_medium_timsort_sort = timeit.timeit(lambda: (data_medium[:]).sort(), number=10)
 
 #________________output____________________
+
+print(f"розмір 'small data' складає {len(data_small)} записів \n")
+print(f"розмір 'medium data' складає {len(data_medium)} записів \n")
+
 print(f":{'-'*19} | :{'-'*19} | :{'-'*19}")
 print(f"{'| Algorithm': <20} | {'Time small data': <20} | {'Time medium data': <20}")
 print(f":{'-'*19} | :{'-'*19} | :{'-'*19}")
